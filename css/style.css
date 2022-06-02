@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: rgb(200, 200, 255);
+}
+
+header {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5vmin;
+}
+
+.Game-section {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.flip-card1,
+.flip-card2,
+.flip-card3,
+.flip-card4,
+.flip-card5,
+.flip-card6,
+.flip-card7,
+.flip-card8 {
+    position: relative;
+    transition: .8s;
+    transform-style: preserve-3d;
+    width: 20vmin;
+    height: 17vmin;
+    margin-top: 20px;
+}
+
+.flip-card1 .flip1,
+.flip-card2 .flip2,
+.flip-card3 .flip3,
+.flip-card4 .flip4,
+.flip-card5 .flip5,
+.flip-card6 .flip6,
+.flip-card7 .flip7,
+.flip-card8 .flip8 {
+    position: absolute;
+    backface-visibility: hidden;
+    transition: .8s;
+    transform-style: preserve-3d;
+    z-index: 100;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    width: 18vmin;
+    height: 17vmin;
+    background: linear-gradient(rgb(255, 169, 169), 50%, rgb(145, 145, 255));
+}
+
+.flip-card1 .img1,
+.flip-card2 .img2,
+.flip-card3 .img3,
+.flip-card4 .img4,
+.flip-card5 .img5,
+.flip-card6 .img6,
+.flip-card7 .img7,
+.flip-card8 .img8 {
+    position: absolute;
+    backface-visibility: hidden;
+    transition: .8s;
+    transform-style: preserve-3d;
+    z-index: 99;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    width: 18vmin;
+    height: 17vmin;
+    transform: rotateY(180deg);
+}
+
+.flip-card1 img,
+.flip-card2 img,
+.flip-card3 img,
+.flip-card4 img,
+.flip-card5 img,
+.flip-card6 img,
+.flip-card7 img,
+.flip-card8 img {
+    width: 18vmin;
+    height: 17vmin;
+}
+
+.ReStart {
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;
+}
+.ReStart button {
+    background-color: rgb(133, 133, 255);
+    border: none;
+    border-radius: 6%;
+    padding: 10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5vmin;
+}
+.ReStart button:hover {
+    background-color: rgb(154, 154, 255);
+    transition: 0.5s;
+} 
+a {
+    color: white;
+    text-decoration: none;
+}
