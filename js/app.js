@@ -1,1 +1,133 @@
-const _0x307e6d=_0x483f;function _0x483f(_0x8c82c9,_0x9980c2){const _0x3c6ce5=_0x3c6c();return _0x483f=function(_0x483f0c,_0x23ef9f){_0x483f0c=_0x483f0c-0x116;let _0x3b4b30=_0x3c6ce5[_0x483f0c];return _0x3b4b30;},_0x483f(_0x8c82c9,_0x9980c2);}(function(_0x146ae6,_0x371786){const _0x258806=_0x483f,_0x50baec=_0x146ae6();while(!![]){try{const _0x228f25=-parseInt(_0x258806(0x118))/0x1+-parseInt(_0x258806(0x13d))/0x2*(-parseInt(_0x258806(0x143))/0x3)+-parseInt(_0x258806(0x11a))/0x4*(parseInt(_0x258806(0x11b))/0x5)+-parseInt(_0x258806(0x123))/0x6*(parseInt(_0x258806(0x13c))/0x7)+-parseInt(_0x258806(0x117))/0x8*(parseInt(_0x258806(0x13b))/0x9)+-parseInt(_0x258806(0x116))/0xa*(-parseInt(_0x258806(0x121))/0xb)+parseInt(_0x258806(0x11e))/0xc;if(_0x228f25===_0x371786)break;else _0x50baec['push'](_0x50baec['shift']());}catch(_0x4616e3){_0x50baec['push'](_0x50baec['shift']());}}}(_0x3c6c,0x2009e));const images=[{'name':_0x307e6d(0x12c),'img':_0x307e6d(0x134)},{'name':_0x307e6d(0x11f),'img':_0x307e6d(0x132)},{'name':_0x307e6d(0x124),'img':_0x307e6d(0x130)},{'name':'Ladybug','img':_0x307e6d(0x13a)},{'name':_0x307e6d(0x12c),'img':_0x307e6d(0x134)},{'name':_0x307e6d(0x11f),'img':_0x307e6d(0x132)},{'name':'Elephant','img':_0x307e6d(0x130)},{'name':_0x307e6d(0x13e),'img':_0x307e6d(0x13a)}];images[_0x307e6d(0x12d)](()=>0.5-Math[_0x307e6d(0x136)]());let cardsChosen=[],cardsChosenId=[],cardsWon=[],count=0x0;function createBoard(){const _0x454817=_0x307e6d;for(let _0x302d81=0x0;_0x302d81<images[_0x454817(0x125)];_0x302d81++){let _0x1e148e=_0x302d81+0x1,_0x3a47da=_0x454817(0x12b)+_0x1e148e,_0x3ed656=_0x454817(0x12e)+_0x1e148e,_0x423b9d='img'+_0x1e148e,_0x3422b9=document[_0x454817(0x138)]('div');_0x3422b9[_0x454817(0x11d)](_0x454817(0x12a),_0x3a47da),_0x3422b9[_0x454817(0x11d)]('id',_0x3a47da),_0x3422b9[_0x454817(0x11d)](_0x454817(0x133),_0x302d81);let _0xf6dc02=document[_0x454817(0x138)](_0x454817(0x12f));_0xf6dc02[_0x454817(0x11d)](_0x454817(0x12a),_0x423b9d),_0xf6dc02[_0x454817(0x11d)]('id',_0x423b9d),document[_0x454817(0x139)](_0x3ed656)['appendChild'](_0x3422b9),document[_0x454817(0x139)](_0x3ed656)[_0x454817(0x120)](_0xf6dc02),_0x3422b9['addEventListener'](_0x454817(0x137),FlipCard);}}function checkForMatch(){const _0xd77e5f=_0x307e6d,_0x568979=document['querySelectorAll'](_0xd77e5f(0x131)),_0x3b3f2c=cardsChosenId[0x0],_0x2ae2bb=cardsChosenId[0x1];let _0x5935ea=parseInt(cardsChosenId[0x0])+0x1,_0x3ac197=parseInt(cardsChosenId[0x1])+0x1,_0x262486=_0xd77e5f(0x12b)+_0x5935ea,_0x128975=_0xd77e5f(0x12b)+_0x3ac197,_0x450b29=_0xd77e5f(0x131)+_0x5935ea,_0x5be835=_0xd77e5f(0x131)+_0x3ac197;cardsChosen[0x0]===cardsChosen[0x1]?(document[_0xd77e5f(0x122)](_0x450b29)['style']['transform']=_0xd77e5f(0x126),document[_0xd77e5f(0x122)](_0x262486)[_0xd77e5f(0x13f)][_0xd77e5f(0x128)]=_0xd77e5f(0x11c),document[_0xd77e5f(0x122)](_0x5be835)[_0xd77e5f(0x13f)]['transform']=_0xd77e5f(0x126),document[_0xd77e5f(0x122)](_0x128975)[_0xd77e5f(0x13f)][_0xd77e5f(0x128)]=_0xd77e5f(0x11c),count++):(document[_0xd77e5f(0x122)](_0x450b29)[_0xd77e5f(0x13f)][_0xd77e5f(0x128)]=_0xd77e5f(0x11c),document[_0xd77e5f(0x122)](_0x262486)[_0xd77e5f(0x13f)][_0xd77e5f(0x128)]='rotateY(0)',document[_0xd77e5f(0x122)](_0x5be835)[_0xd77e5f(0x13f)][_0xd77e5f(0x128)]='rotateY(-180deg)',document[_0xd77e5f(0x122)](_0x128975)[_0xd77e5f(0x13f)][_0xd77e5f(0x128)]=_0xd77e5f(0x126)),count==0x4&&swal({'title':_0xd77e5f(0x140),'text':_0xd77e5f(0x141),'icon':_0xd77e5f(0x119)}),cardsChosen=[],cardsChosenId=[];}function FlipCard(){const _0x2b5f8e=_0x307e6d;let _0x43e0ae=this[_0x2b5f8e(0x142)](_0x2b5f8e(0x133)),_0x28ed02=_0x43e0ae;_0x28ed02++;let _0xabca0d=_0x2b5f8e(0x12b)+_0x28ed02,_0x19e511='img'+_0x28ed02;document[_0x2b5f8e(0x122)](_0x19e511)[_0x2b5f8e(0x129)]=images[_0x43e0ae][_0x2b5f8e(0x131)],console[_0x2b5f8e(0x127)](images[_0x43e0ae][_0x2b5f8e(0x135)]),document['getElementById'](_0xabca0d)[_0x2b5f8e(0x13f)][_0x2b5f8e(0x128)]=_0x2b5f8e(0x11c),document[_0x2b5f8e(0x122)](_0x19e511)['style'][_0x2b5f8e(0x128)]=_0x2b5f8e(0x126),cardsChosen['push'](images[_0x43e0ae][_0x2b5f8e(0x135)]),cardsChosenId['push'](_0x43e0ae),cardsChosen[_0x2b5f8e(0x125)]===0x2&&setTimeout(checkForMatch,0x1f4);}function Start(){const _0x206505=_0x307e6d;count=0x0,images[_0x206505(0x12d)](()=>0.5-Math[_0x206505(0x136)]());for(let _0x2b27e4=0x0;_0x2b27e4<images[_0x206505(0x125)];_0x2b27e4++){let _0xe62d06=_0x2b27e4+0x1,_0x26ad4a='flip'+_0xe62d06,_0x368dd5='img'+_0xe62d06;document[_0x206505(0x122)](_0x26ad4a)[_0x206505(0x13f)][_0x206505(0x128)]=_0x206505(0x126),document[_0x206505(0x122)](_0x368dd5)[_0x206505(0x13f)][_0x206505(0x128)]=_0x206505(0x11c);}}function _0x3c6c(){const _0x3a23b6=['Congratulations','You\x20found\x20all\x20the\x20pictures','getAttribute','405003lzNEbH','50XvQbEJ','1704qWSMhQ','8205CTSsOT','success','44lruFBb','25945Dhrbjn','rotateY(-180deg)','setAttribute','3070476Ztilcw','Dolphin','appendChild','36201DcglUn','getElementById','423492KnFlhl','Elephant','length','rotateY(0)','log','transform','innerHTML','class','flip','Cat','sort','.flip-card','div','<img\x20src=\x22image/Elephant.png\x22\x20alt=\x22\x22>','img','<img\x20src=\x22image/Dolphin.png\x22\x20alt=\x22\x22>','data-id','<img\x20src=\x22image/Cat.png\x22\x20alt=\x22\x22>','name','random','click','createElement','querySelector','<img\x20src=\x22image/Ladybug.png\x22\x20alt=\x22\x22>','2943ZSfQjY','14IqjPdX','2bShWSr','Ladybug','style'];_0x3c6c=function(){return _0x3a23b6;};return _0x3c6c();}createBoard();
+const images = [{
+    name: 'Cat',
+    img: '<img src="image/Cat.png" alt="">'
+},
+{
+    name: 'Dolphin',
+    img: '<img src="image/Dolphin.png" alt="">'
+},
+{
+    name: 'Elephant',
+    img: '<img src="image/Elephant.png" alt="">'
+},
+{
+    name: 'Ladybug',
+    img: '<img src="image/Ladybug.png" alt="">'
+},
+{
+    name: 'Cat',
+    img: '<img src="image/Cat.png" alt="">'
+},
+{
+    name: 'Dolphin',
+    img: '<img src="image/Dolphin.png" alt="">'
+},
+{
+    name: 'Elephant',
+    img: '<img src="image/Elephant.png" alt="">'
+},
+{
+    name: 'Ladybug',
+    img: '<img src="image/Ladybug.png" alt="">'
+}
+]
+
+images.sort(() => 0.5 - Math.random())
+
+//define variables ...
+let cardsChosen = []
+let cardsChosenId = []
+let cardsWon = []
+let count = 0
+//create your board
+function createBoard() {
+    for (let i = 0; i < images.length; i++) {
+        let y = i + 1
+        let name = 'flip' + y;
+        let name1 = '.flip-card' + y;
+        let imgname = 'img' + y
+        //card flip
+        let card = document.createElement('div')
+        card.setAttribute('class', name)
+        card.setAttribute('id', name)
+        card.setAttribute('data-id', i)
+        //img flip
+        let imgCard = document.createElement('div')
+        imgCard.setAttribute('class', imgname)
+        imgCard.setAttribute('id', imgname)
+        // console.log(imgCard)
+        //appending ..
+        document.querySelector(name1).appendChild(card)
+        document.querySelector(name1).appendChild(imgCard)
+        card.addEventListener('click', FlipCard)
+    }
+}
+
+function checkForMatch() {
+    const cards = document.querySelectorAll('img')
+    const optionOneId = cardsChosenId[0]
+    const optionTwoId = cardsChosenId[1]
+    let y = parseInt(cardsChosenId[0]) + 1
+    let y2 = parseInt(cardsChosenId[1]) + 1
+    let nameOne = 'flip' + y;
+    let nameTwo = 'flip' + y2;
+    let imgOne = 'img' + y;
+    let imgTwo = 'img' + y2;
+    if (optionOneId == optionTwoId) {
+        document.getElementById(imgOne).style.transform = 'rotateY(-180deg)'
+        document.getElementById(nameOne).style.transform = 'rotateY(0)'
+        document.getElementById(imgTwo).style.transform = 'rotateY(-180deg)'
+        document.getElementById(nameTwo).style.transform = 'rotateY(0)'
+    }
+    else if (cardsChosen[0] === cardsChosen[1]) {
+        document.getElementById(imgOne).style.transform = 'rotateY(0)'
+        document.getElementById(nameOne).style.transform = 'rotateY(-180deg)'
+        document.getElementById(imgTwo).style.transform = 'rotateY(0)'
+        document.getElementById(nameTwo).style.transform = 'rotateY(-180deg)'
+        count++
+    } else {
+        document.getElementById(imgOne).style.transform = 'rotateY(-180deg)'
+        document.getElementById(nameOne).style.transform = 'rotateY(0)'
+        document.getElementById(imgTwo).style.transform = 'rotateY(-180deg)'
+        document.getElementById(nameTwo).style.transform = 'rotateY(0)'
+    }
+    if (count == 4) {
+        swal({
+            title: "Congratulations",
+            text: "You found all the pictures",
+            icon: "success"
+        })
+    }
+    cardsChosen = []
+    cardsChosenId = []
+}
+
+function FlipCard() {
+    let cardId = this.getAttribute('data-id')
+    let y = cardId
+    y++
+    let name = 'flip' + y
+    let imgname = 'img' + y
+    document.getElementById(imgname).innerHTML = images[cardId].img
+    console.log(images[cardId].name)
+    document.getElementById(name).style.transform = 'rotateY(-180deg)'
+    document.getElementById(imgname).style.transform = 'rotateY(0)'
+    cardsChosen.push(images[cardId].name)
+    cardsChosenId.push(cardId)
+    if (cardsChosen.length === 2) {
+        setTimeout(checkForMatch, 700)
+    }
+}
+function Start(e) {
+    e.preventDefault()
+    count = 0
+    images.sort(() => 0.5 - Math.random())
+    for (let i = 0; i < images.length; i++) {
+        let y = i + 1
+        let name = 'flip' + y
+        let imgname = 'img' + y
+        document.getElementById(name).style.transform = 'rotateY(0)'
+        document.getElementById(imgname).style.transform = 'rotateY(-180deg)'
+    }
+}
+createBoard()
